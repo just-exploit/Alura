@@ -1,1 +1,26 @@
-
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>How much LightYears?</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="container">
+    <div id="title">
+      <h1>Conversor KM para anos luz</h1>
+    </div>
+    <div id="box">
+      <p>Descubra quanto tempo leva para viajar na velocidade da luz!</p><br>
+      <button id="firstOption" type="submit" onclick="MudarCalc(but1, but2)">Km -> Anos-luz</button>
+      <button id="secondOption" type='select' onclick="MudarCalc(but2, but1)" >Anos-luz -> Km</button><br>
+      <input id="inputValor" type="number"  ><br>
+      <button type="submit" onclick="Calcular()">Converter</button>
+      <p id="resultado"></p>
+    </div>
+  </div>
+</body>
+</html>
