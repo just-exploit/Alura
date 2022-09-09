@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto Mono',monospace;
+  min-height: 400px;
+  background-image: url('http://cdn.onlinewebfonts.com/svg/img_460642.png');
+  background-color: #cca9dd;
+  background-size: 50vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color:#000000;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color:#000000;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

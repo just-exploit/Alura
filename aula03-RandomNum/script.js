@@ -8,7 +8,6 @@ function reset(){
   numAl = parseInt(Math.random(10)*11);
   res.innerHTML += "<br>Um novo número aleatório criado"
   setTimeout(() => { res.innerHTML = "";}, 3000)
-
 }
 
 function Chutar(){
@@ -18,6 +17,8 @@ function Chutar(){
   console.log(tentativas)
   if (numUser == ""){
     alert("Digite um valor.");
+  } else if (numUser > 10 || numUser < 0){
+    res.innerHTML = "Valor inválido! digite um número entre 0 e 10";
   } else if (numUser != numAl && tentativas == 3){
     res.innerHTML = "Você PERDEU, meu número era " + numAl;
     reset();
@@ -30,7 +31,5 @@ function Chutar(){
     res.innerHTML = "Errou. Tente um número MENOR.";
   }
 }
-
-resetar.addEventListener("click", reset());
 
 // STILIZAR O SITE, GG
