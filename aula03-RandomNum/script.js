@@ -11,10 +11,10 @@ function reset(){
 }
 
 function Chutar(){
-  var numUser = document.getElementById("number").value;
-  console.log(numAl)
+  var numUser = parseInt(document.getElementById("number").value);
+  
   tentativas += 1;
-  console.log(tentativas)
+  
   if (numUser == ""){
     alert("Digite um valor.");
   } else if (numUser > 10 || numUser < 0){
