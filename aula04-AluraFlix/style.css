@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-size: 100%;
+  background-color: #220055;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+p{
+  color: white;
+}
+input{
+  opacity: 50%;
+  margin-bottom: 10px;
+}
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+#jogos{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+img{
+  margin: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 30%;
+}
