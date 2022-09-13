@@ -1,22 +1,42 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title> Imersão Dev Alura - Aula 01</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Conversor de moedas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js">script.js</script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    <div id="container">
       <div id="header">
-        <h1 class="page-title">Conversor de Real para bitcoin</h1>
-        <p class="page-subtitle">Converte seus Reias em Bitcoins</p>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
-    
-        <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-        </a>
+        <h1 id="page-title">Converta seu cash para as principais moedas atuais</h1>
       </div>
       <div id="box">
-        
+        <select name="Moedas" id="Moedas1">
+          <option value="default" disabled selected>Selecione uma opção</option>
+          <option value="BRL">BRL</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="RUB">RUB</option>
+          <option value="BTC">BTC</option>
+        </select>
+        <select name="Moedas" id="Moedas2">
+          <option value="default" disabled selected>Selecione uma opção</option>
+          <option value="BRL">BRL</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="RUB">RUB</option>
+          <option value="BTC">BTC</option>
+        </select> <br>
+        <input type="number" name="inpVal" id="inpVal"> <br>
+        <button type="submit" onclick="calc()">Converter</button>
+        <p>Valores usados de exchange.host</p>
+        <p id="resultadoP"></p>
+        <h2 id="resultado"></h2>
       </div>
     </div>
   </body>
