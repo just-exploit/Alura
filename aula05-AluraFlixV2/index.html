@@ -1,0 +1,30 @@
+<html lang="pt-br">
+
+<head>
+  <title>
+    Imersão Dev - Aula 05
+  </title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script src="script.js" defer>script.js</script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Explflix
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    <p class="page-subtitle">
+      Qual seu filme favorito?
+    </p>
+    <div class="form-wrapper">
+      <input type="text" id="nome" name="nome" placeholder="Nome do filme">
+      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem"> <br>
+      <button onClick="checaUrl()">Adicionar Filme</button>
+      <button onclick="limparLista()">Limpar</button> <br>
+      <button onclick="removerFilme()">Remover filme</button></button>
+    </div>
+  </div>
+  <div id="listaFilmes"></div>
+</body>
